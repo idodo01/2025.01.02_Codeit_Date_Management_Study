@@ -1,0 +1,15 @@
+CREATE TABLE course (
+id INT NOT NULL AUTO_INCREMENT,
+title VARCHAR(30) NULL,
+semester VARCHAR(6) NULL,
+maximum INT NULL,
+professor VARCHAR(10) NULL,
+PRIMARY KEY(id)
+);
+
+CREATE TABLE review (
+id INT NOT NULL AUTO_INCREMENT,
+course_id INT NULL,
+star INT NULL,
+comment VARCHAR(500) NULL,
+PRIMARY KEY(id));
